@@ -1,6 +1,7 @@
 package paragonString.compare;
 
 import javax.management.StringValueExp;
+import java.util.Locale;
 
 public class Example {
     public static void main(String[] args) {
@@ -19,5 +20,13 @@ public class Example {
         String continent = school.substring(10);
         String extract = continent.substring(2, 6);
         System.out.println(extract);
+        System.out.println(school.toLowerCase(Locale.FRENCH));
+        System.out.println(school.replace('o', 'u'));
+        System.out.println(school.toCharArray());
+
+        char[] myCharArray = school.toCharArray();
+        System.out.println(myCharArray);
+        System.out.println(String.valueOf(23.00));
+        System.out.println(String.valueOf(true));
     }
 }
